@@ -55,7 +55,7 @@
                                     <ul>
                                         <li><a href="/">BERANDA</a></li>
                                         <li><a href="/umkms">UMKM</a></li>
-                                        <li><a href="/tentang">TENTANG KAMI</a></li>
+                                        {{-- <li><a href="/tentang">TENTANG KAMI</a></li> --}}
                                         <li class="special-link"><a href="/kontak">KONTAK KAMI</a></li>
                                     </ul>
                                 </div>
@@ -309,7 +309,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="ltn__product-item ltn__product-item-3 text-left">
                         <div class="product-img">
-                            <a href="{{route('produk.showProduk', $data->id)}}" title="Quick View" data-toggle="modal" data-target="#quick_produk_modal">
+                            <a href="{{$url = route('produk-detail', ['id' => $data]);}}" title="Quick View" data-toggle="modal" data-target="#quick_produk_modal">
                                 <img src="{{ asset('storage/produk/'.$data->gambar) }}" alt="#">
                             </a>
                             <div class="product-badge">

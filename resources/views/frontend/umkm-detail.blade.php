@@ -54,7 +54,7 @@
                                     <ul>
                                         <li><a href="/">BERANDA</a></li>
                                         <li><a href="/umkms">UMKM</a></li>
-                                        <li><a href="/tentang">TENTANG KAMI</a></li>
+                                        {{-- <li><a href="/tentang">TENTANG KAMI</a></li> --}}
                                         <li class="special-link"><a href="/kontak">KONTAK KAMI</a></li>
                                     </ul>
                                 </div>

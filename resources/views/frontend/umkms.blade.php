@@ -54,7 +54,7 @@
                                     <ul>
                                         <li><a href="/">BERANDA</a></li>
                                         <li><a href="/umkms" active>UMKM</a></li>
-                                        <li><a href="contact.html">TENTANG KAMI</a></li>
+                                        {{-- <li><a href="contact.html">TENTANG KAMI</a></li> --}}
                                         <li class="special-link"><a href="contact.html">KONTAK KAMI</a></li>
                                     </ul>
                                 </div>
@@ -148,163 +148,131 @@
     <!-- BREADCRUMB AREA END -->
     
     <!-- PRODUCT DETAILS AREA START -->
-    <div class="ltn__product-area ltn__product-gutter mb-120">
+    <div class="ltn__product-tab-area ltn__product-gutter pt-85 pb-70">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="ltn__shop-options">
-                        <ul>
-                            <li>
-                                <div class="ltn__grid-list-tab-menu">
-                                    <div class="nav">
-                                        <a class="active show" data-toggle="tab" href="#liton_product_grid"><i class="fas fa-th-large"></i></a>
-                                        <a data-toggle="tab" href="#liton_product_list"><i class="fas fa-list"></i></a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="showing-product-number text-right">
-                                    {{-- <span>Showing 1–12 of 18 results</span> --}}
-                                </div>
-                            </li>
-                            <li>
-                                <div class="short-by text-center">
-                                    <form action="" method="GET">
-                                        @csrf
-                                        <select class="nice-select" name="kategori_umkm">
-                                            <option value="all">Semua</option>
-                                            @foreach($kategori as $data)
-                                                <option value="{{ $data->id }}">{{ $data->kategori_umkm }}</option>
-                                            @endforeach
-                                        </select>
-                                        <button type="submit">Kategori</button>
-                                    </form>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="section-title-area ltn__section-title-2 text-center">
+                        <h1 class="section-title">KATEGORI</h1>
+                    </div>
+                    
+                    <div class="ltn__tab-menu ltn__tab-menu-2 ltn__tab-menu-top-right-- text-uppercase text-center">
+                        <div class="nav">
+                            <a class="active show" data-toggle="tab" href="#liton_tab_3_all">Semua</a>
+                            @foreach($kategori as $data)
+                                <a data-toggle="tab" href="#liton_tab_3_{{$data->kategori_umkm}}" class="">{{$data->kategori_umkm}}</a>
+                            @endforeach
+                            {{-- <a data-toggle="tab" href="#liton_tab_3_1" class="">Test</a> --}}
+                        </div>
                     </div>
                     <div class="tab-content">
-                        <div class="tab-pane fade active show" id="liton_product_grid">
-                            <div class="ltn__product-tab-content-inner ltn__product-grid-view">
-                                <div class="row">
+                        <div class="tab-pane fade active show" id="liton_tab_3_all">
+                            <!-- Menampilkan semua UMKM -->
+                            <div class="ltn__product-tab-content-inner">
+                                <div class="row ltn__tab-product-slider-one-active slick-arrow-1">
                                     @foreach($umkms as $umkm)
-                                    <!-- ltn__product-item -->
-                                    <div class="col-xl-4 col-sm-6 col-6">
-                                        <div class="ltn__product-item ltn__product-item-3 text-center">
-                                            <div class="product-img">
-                                                <a href="{{ route('umkm-detail', ['id' => $umkm->id]) }}"><img src="{{ asset('storage/umkm/'.$umkm->logo) }}" alt="#"></a>
-                                                <div class="product-badge">
-                                                    <ul>
-                                                        <li class="sale-badge">{{$umkm->kategori['kategori_umkm']}}</li>
-                                                    </ul>
+                                        <!-- ltn__product-item -->
+                                        <div class="col-lg-12">
+                                            <a href="{{ route('umkm-detail', ['id' => $umkm->id]) }}">
+                                            <div class="ltn__product-item ltn__product-item-3 text-center">
+                                                <div class="product-img">
+                                                    <a href="{{ route('umkm-detail', ['id' => $umkm->id]) }}"><img src="{{ asset('storage/umkm/'.$umkm->logo) }}" alt="#"></a>
+                                                    <div class="product-badge">
+                                                        <ul>
+                                                            <li class="sale-badge">{{$umkm->kategori['kategori_umkm'] }}</li>
+                                                        </ul>
+                                                    </div>
+                                                    {{-- <div class="product-hover-action">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="{{ route('umkm-detail', ['id' => $umkm->id]) }}" title="Quick View" data-toggle="modal">
+                                                                    <i class="far fa-eye"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div> --}}
                                                 </div>
-                                                <div class="product-hover-action">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="{{ route('umkm-detail', ['id' => $umkm->id]) }}">
-                                                                <i class="far fa-eye"></i>
-                                                            </a>
-                                                        </li>
-                                                        {{-- <li>
-                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                                                <i class="fas fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal">
-                                                                <i class="far fa-heart"></i></a>
-                                                        </li> --}}
-                                                    </ul>
+                                                <div class="product-info">
+                                                    {{-- <div class="product-ratting">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
+                                                            <li><a href="#"><i class="far fa-star"></i></a></li>
+                                                            <li class="review-total"> <a href="#"> (24)</a></li>
+                                                        </ul>
+                                                    </div> --}}
+                                                    <h2 class="product-title"><a href="product-details.html">{{$umkm->nama_umkm}}</a></h2>
+                                                    <div class="product-price">
+                                                        <a href="{{ route('umkm-detail', ['id' => $umkm->id]) }}"><span>{{$umkm->nama_umkm}}</span></a> 
+                                                        {{-- <del>$46.00</del> --}}
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="product-info">
-                                                <h2 class="product-title"><a href="product-details.html">Red Hot Tomato</a></h2>
-                                                <div class="product-price">
-                                                    <span>{{$umkm->nama_umkm}}</span>
-                                                </div>
-                                            </div>
+                                        </a>
                                         </div>
-                                    </div>
+                                        <!-- ltn__product-item -->
                                     @endforeach
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="liton_product_list">
-                            <div class="ltn__product-tab-content-inner ltn__product-list-view">
-                                <div class="row">
+                        @foreach($kategori as $data)
+                        <div class="tab-pane fade" id="liton_tab_3_{{$data->kategori_umkm}}">
+                            <!-- Menampilkan UMKM berdasarkan kategori -->
+                            <div class="ltn__product-tab-content-inner">
+                                <div class="row ltn__tab-product-slider-one-active slick-arrow-1">
                                     @foreach($umkms as $umkm)
-                                    <!-- ltn__product-item -->
-                                    <div class="col-lg-12">
-                                        <div class="ltn__product-item ltn__product-item-3">
-                                            <div class="product-img">
-                                                <a href="product-details.html"><img src="{{ asset('storage/umkm/'.$umkm->logo) }}" alt="#"></a>
-                                                <div class="product-badge">
-                                                    <ul>
-                                                        <li class="sale-badge">{{$umkm->kategori['kategori_umkm']}}</li>
-                                                    </ul>
+                                        <!-- ltn__product-item -->
+                                        @if(!empty($umkm->kategori) && $umkm->kategori['kategori_umkm'] == $data->kategori_umkm)
+                                        <div class="col-lg-12">
+                                            
+                                            <div class="ltn__product-item ltn__product-item-3 text-center">
+                                                <div class="product-img">
+                                                    <a href="{{route('umkm.show', $data->id)}}"><img src="{{ asset('storage/umkm/'.$umkm->logo) }}" alt="#"></a>
+                                                    <div class="product-badge">
+                                                        <ul>
+                                                            <li class="sale-badge">{{$umkm->kategori['kategori_umkm'] }}</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-hover-action">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="{{route('umkm.show', $data->id)}}" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                                                    <i class="far fa-eye"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <div class="product-ratting">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
+                                                            <li><a href="#"><i class="far fa-star"></i></a></li>
+                                                            <li class="review-total"> <a href="#"> (24)</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <h2 class="product-title"><a href="{{route('umkm.show', $data->id)}}">{{$umkm->nama_umkm}}</a></h2>
+                                                    <div class="product-price">
+                                                        <span>$32.00</span>
+                                                        <del>$46.00</del>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="product-info">
-                                                <div class="product-price">
-                                                    <span>{{$umkm->nama_umkm}}</span>
-                                                </div>
-                                                <div class="product-brief">
-                                                    <p>{{$umkm->deskripsi}}</p>
-                                                </div>
-                                                <div class="product-hover-action">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
-                                                                <i class="far fa-eye"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                                                <i class="fas fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal">
-                                                                <i class="far fa-heart"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
-                                    </div>
+                                        @endif
                                     @endforeach
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ltn__pagination-area text-center">
-                        <div class="ltn__pagination">
-                            <ul>
-                                {{-- Tampilkan tautan ke halaman sebelumnya --}}
-                                @if ($umkms->onFirstPage())
-                                    <li class="disabled"><span><i class="fas fa-angle-double-left"></i></span></li>
-                                @else
-                                    <li><a href="{{ $umkms->previousPageUrl() }}"><i class="fas fa-angle-double-left"></i></a></li>
-                                @endif
-                    
-                                {{-- Tampilkan tautan untuk setiap halaman --}}
-                                @for ($i = 1; $i <= $umkms->lastPage(); $i++)
-                                    <li class="{{ $umkms->currentPage() == $i ? 'active' : '' }}">
-                                        <a href="{{ $umkms->url($i) }}">{{ $i }}</a>
-                                    </li>
-                                @endfor
-                    
-                                {{-- Tampilkan tautan ke halaman berikutnya --}}
-                                @if ($umkms->hasMorePages())
-                                    <li><a href="{{ $umkms->nextPageUrl() }}"><i class="fas fa-angle-double-right"></i></a></li>
-                                @else
-                                    <li class="disabled"><span><i class="fas fa-angle-double-right"></i></span></li>
-                                @endif
-                            </ul>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
