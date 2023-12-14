@@ -32,19 +32,20 @@
                     </a>
                 </nav>
             </div>
-            <a class="nav-link" href="charts.html">
-                <div class="sb-nav-link-icon"><i class="far fa-address-card"></i></div>
-                Tentang
-            </a>
-            <a class="nav-link" href="tables.html">
-                <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>
-                Kontak
-            </a>
+            <!--<a class="nav-link" href="charts.html">-->
+            <!--    <div class="sb-nav-link-icon"><i class="far fa-address-card"></i></div>-->
+            <!--    Tentang-->
+            <!--</a>-->
+            <!--<a class="nav-link" href="tables.html">-->
+            <!--    <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>-->
+            <!--    Kontak-->
+            <!--</a>-->
+            
+            <div class="sb-sidenav-menu-heading">Addons</div>
             <a class="nav-link" href="/users">
                 <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>
                 Users
             </a>
-            <div class="sb-sidenav-menu-heading">Addons</div>
             <a class="nav-link" href="../logout">
                 <div class="sb-nav-link-icon"><i class="fas fa-user-cog"></i></div>
                 Logout

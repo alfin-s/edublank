@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('frontend.umkm-detail');
 // });
 
+Route::get('/maps', function () {
+    return view('maps');
+});
+
 
 // Route::get('/{kategori}', [FrontendController::class, 'index']);
 
@@ -19,7 +23,7 @@ Route::get('/umkms', [FrontendController::class, 'umkms']);
 
 Route::get('/umkm-detail/{id}', [UmkmDetailController::class, 'show'])->name('umkm-detail');
 
-Route::get('/produk-detail/{id}', [ProdukDetailController::class, 'showProduk'])->name('produk-detail');
+// Route::get('/produk-detail/{id}', [ProdukDetailController::class, 'showProduk'])->name('produk-detail');
 
 
 

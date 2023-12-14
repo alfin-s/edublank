@@ -3,14 +3,14 @@
 <div class="container-fluid px-4">
     <h1 class="mt-4">Data Users</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
         <li class="breadcrumb-item active">Tebel Data Users</li>
     </ol>
-    <div class="card mb-4">
-        <div class="card-body">
-            <a href="{{ route('users.create') }}" class="btn btn-success">Tambah Users</a>
-        </div>
-    </div>
+    <!--<div class="card mb-4">-->
+    <!--    <div class="card-body">-->
+    <!--        <a href="{{ route('users.create') }}" class="btn btn-success">Tambah Users</a>-->
+    <!--    </div>-->
+    <!--</div>-->
     <div class="card mb-4">
         <div class="card-header">
             <i class="fas fa-table me-1"></i>
@@ -29,8 +29,9 @@
                         <th>No</th>
                         <th>Nama Users</th>
                         <th>Email</th>
-                        <th>UMKM Tergabung</th>
-                        <th>Role</th>
+                        <!--<th>Password</th>-->
+                        <!--<th>UMKM Tergabung</th>-->
+                        <!--<th>Role</th>-->
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -39,8 +40,9 @@
                         <th>No</th>
                         <th>Nama Users</th>
                         <th>Email</th>
-                        <th>UMKM Tergabung</th>
-                        <th>Role</th>
+                        <!--<th>Password</th>-->
+                        <!--<th>UMKM Tergabung</th>-->
+                        <!--<th>Role</th>-->
                         <th>Aksi</th>
                     </tr>
                 </tfoot>
@@ -51,8 +53,9 @@
                         <td>{{ $loop->iteration}}</td>
                         <td>{{ $data->name }}</td>
                         <td>{{ $data->email }}</td>
-                        <td>{{ $data->umkm['nama_umkm'] }}</td>
-                        <td>{{ $data->role }}</td>
+                        <!--<td>{{ $data->password }}</td>-->
+                        <!--<td>{{ $data->umkm['nama_umkm'] }}</td>-->
+                        <!--<td>{{ $data->role }}</td>-->
                         <td>
                             <form onsubmit="return confirm('Apakah Anda ingin menghapus data ini ?');" action="{{ route('users.destroy', $data->id) }}" method="POST">
                                 <a href="{{ route('users.edit', $data->id) }}" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>

@@ -39,20 +39,23 @@ class FrontendController extends Controller
     public function umkms(Request $request, $kategoriId = null)
     {
         // Ambil data UMKM berdasarkan kategori tertentu jika parameter kategori disertakan
-        $umkmsQuery = Umkm::when($kategoriId, function ($query, $kategoriId) {
+        $umkms = Umkm::when($kategoriId, function ($query, $kategoriId) {
             return $query->whereHas('kategori', function ($subquery) use ($kategoriId) {
                 $subquery->where('kategori_umkm', $kategoriId);
             });
-        });
-
-        // Menggunakan pagination untuk membatasi jumlah data yang diambil
-        $umkms = $umkmsQuery->paginate(3); // Sesuaikan jumlah item per halaman sesuai kebutuhan
+        })->get();
 
         // Ambil semua kategori
         $kategori = KategoriUmkm::all();
+        $produk = Produk::all();
+
+        // Format harga pada setiap objek produk
+        foreach ($produk as $item) {
+            $item->formatted_harga = number_format($item->harga, 0, ',', '.');
+        }
 
         // Render view dengan umkms dan kategori
-        return view('frontend.umkms', compact('umkms', 'kategori'));
+        return view('frontend.umkms', compact('umkms', 'kategori', 'produk'));
     }
 
 

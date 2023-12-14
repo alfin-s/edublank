@@ -1,544 +1,268 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Broccoli - Organic Food HTML Template</title>
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edublankon - UNY</title>
+<meta name="keywords" content="HTML5,CSS3,HTML,Template,Multi-Purpose,M_Adnan,Corporate Theme,SEBIAN Multi Purpose Care,eCommerce,SEBIAN - Multi Purpose eCommerce HTML5 Template">
+<meta name="description" content="SEBIAN - Multi Purpose eCommerce HTML5 Template">
+<meta name="author" content="M_Adnan">
 
-    <!-- Place favicon.png in the root directory -->
-    <link rel="shortcut icon" href="{{asset ('user/img/favicon.png') }}" type="image/x-icon" />
-    <!-- Font Icons css -->
-    <link rel="stylesheet" href="{{asset ('user/css/font-icons.css') }}">
-    <!-- plugins css -->
-    <link rel="stylesheet" href="{{asset ('user/css/plugins.css') }}">
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="{{asset ('user/css/style.css') }}">
-    <!-- Responsive css -->
-    <link rel="stylesheet" href="{{asset ('user/css/responsive.css') }}">
+<!-- FONTS ONLINE -->
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<!--MAIN STYLE-->
+<link href="{{asset ('frontend/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+<link href="{{asset ('frontend/css/main.css') }}" rel="stylesheet" type="text/css">
+<link href="{{asset ('frontend/css/style.css') }}" rel="stylesheet" type="text/css">
+<link href="{{asset ('frontend/css/responsive.css') }}" rel="stylesheet" type="text/css">
+<link href="{{asset ('frontend/css/animate.css') }}" rel="stylesheet" type="text/css">
+<link href="{{asset ('frontend/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+<!-- ADD YOUR OWN STYLING HERE. AVOID TO USE STYLE.CSS AND MAIN.CSS. IT WILL BE HELPFUL FOR YOU IN FUTURE UPDATES -->
+<link href="{{asset ('frontend/css/custom.css') }}" rel="stylesheet" type="text/css">
+
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="{{asset ('frontend/rs-plugin/css/settings.css') }}" media="screen" />
+
+<!-- JavaScripts -->
+<script src="{{asset ('frontend/js/modernizr.js') }}"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
 </head>
-
 <body>
-    <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-
-<!-- Body main wrapper start -->
-<div class="body-wrapper">
-
-    <!-- HEADER AREA START (header-5) -->
-    <header class="ltn__header-area ltn__header-5 ltn__header-transparent gradient-color-2">
-        <!-- ltn__header-top-area start -->
-        <!-- ltn__header-top-area end -->
-
-        <!-- ltn__header-middle-area start -->
-        <div class="ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-black plr--9---">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="site-logo-wrap">
-                            <div class="site-logo">
-                                <a href="index.html"><{{asset ('user/img src="img/logo-2.png') }}" alt="Logo"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col header-menu-column menu-color-white">
-                        <div class="header-menu d-none d-xl-block">
-                            <nav>
-                                <div class="ltn__main-menu">
-                                    <ul>
-                                        <li><a href="/">BERANDA</a></li>
-                                        <li><a href="/umkms">UMKM</a></li>
-                                        {{-- <li><a href="/tentang">TENTANG KAMI</a></li> --}}
-                                        <li class="special-link"><a href="/kontak">KONTAK KAMI</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="ltn__header-options ltn__header-options-2">
-                        <!-- header-search-1 -->
-                        
-                        <!-- user-menu -->
-                        
-                        <!-- mini-cart -->
-                        
-                        <!-- mini-cart -->
-                        <!-- Mobile Menu Button -->
-                        <div class="mobile-menu-toggle d-xl-none">
-                            <a href="#ltn__utilize-mobile-menu" class="ltn__utilize-toggle">
-                                <svg viewBox="0 0 800 600">
-                                    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
-                                    <path d="M300,320 L540,320" id="middle"></path>
-                                    <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ltn__header-middle-area end -->
-    </header>
-    <!-- HEADER AREA END -->
-    
-    <!-- Utilize Cart Menu Start -->
-    
-    <!-- Utilize Cart Menu End -->
-
-    <!-- Utilize Mobile Menu Start -->
-    <div id="ltn__utilize-mobile-menu" class="ltn__utilize ltn__utilize-mobile-menu">
-        <div class="ltn__utilize-menu-inner ltn__scrollbar">
-            <div class="ltn__utilize-menu-head">
-                <div class="site-logo">
-                    <a href="index.html"><img src="{{asset ('user/img/logo.png') }}" alt="Logo"></a>
-                </div>
-                <button class="ltn__utilize-close">×</button>
-            </div>
-            <div class="ltn__utilize-menu">
-                <ul>
-                    <li><a href="/">BERANDA</a></li>
-                    <li><a href="/umkms">UMKM</a></li>
-                    <li><a href="/tentang">TENTANG KAMI</a></li>
-                    <li><a href="/kontak">KONTAK KAMI</a></li>
-                </ul>
-            </div>
-            <div class="ltn__social-media-2">
-                <ul>
-                    <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
+<!-- LOADER ===========================================-->
+<div id="loader">
+  <div class="loader">
+    <div class="position-center-center"> <img src="{{asset ('frontend/images/logo-dark.png') }}" alt="">
+      
+      <p class="font-playfair text-center">Tunggu Sebentar...</p>
+      <div class="loading">
+      	<div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+      </div>
     </div>
-    <!-- Utilize Mobile Menu End -->
-
-    <div class="ltn__utilize-overlay"></div>
-
-    <!-- BREADCRUMB AREA START -->
-    <div class="ltn__breadcrumb-area ltn__breadcrumb-area-2 ltn__breadcrumb-color-white bg-overlay-theme-black-90 bg-image" data-bg="img/bg/9.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="ltn__breadcrumb-inner ltn__breadcrumb-inner-2 justify-content-between">
-                        <div class="section-title-area ltn__section-title-2">
-                            <h6 class="section-subtitle ltn__secondary-color">//  Selamat Datang</h6>
-                            <h1 class="section-title white-color">{{$umkms->nama_umkm}}</h1>
-                        </div>
-                        <div class="ltn__breadcrumb-list">
-                            <ul>
-                                <li><a href="index.html">Baeranda</a></li>
-                                <li>{{$umkms->nama_umkm}}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- BREADCRUMB AREA END -->
-
-    <!-- SHOP DETAILS AREA START -->
-    <div class="ltn__shop-details-area pb-85">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-12">
-                    <div class="ltn__shop-details-inner mb-60">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="ltn__shop-details-img-gallery">
-                                    <div class="ltn__shop-details-large-img">
-                                        <div class="single-large-img">
-                                            <a href="{{ asset('storage/umkm/'.$umkms->logo) }}" data-rel="lightcase:myCollection">
-                                                <img src="{{ asset('storage/umkm/'.$umkms->logo) }}" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="modal-product-info shop-details-info pl-0">
-                                    {{-- <div class="product-ratting">
-                                        <ul>
-                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
-                                            <li><a href="#"><i class="far fa-star"></i></a></li>
-                                            <li class="review-total"> <a href="#"> ( 95 Reviews )</a></li>
-                                        </ul>
-                                    </div> --}}
-                                    <h3>{{$umkms->kategori['kategori_umkm']}}</h3>
-                                    <div class="product-price">
-                                        <span>{{$umkms->nama_umkm}}</span>
-                                    </div>
-                                    
-                                    <div class="ltn__product-details-menu-3">
-                                        <ul>
-                                            <li>
-                                                <a href="#" class="" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal">
-                                                    <i class="fab fa-instagram"></i>
-                                                    <span>Instagram</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <hr>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="ltn__product-details-menu-2">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="https://wa.me/62{{$umkms->no_telp}}" class="theme-btn-1 btn btn-effect-1" target="_blank">
-                                                                {{-- <i class="fab fa-whatsapp"></i> --}}
-                                                                <span>WhatsApp</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="ltn__product-details-menu-2">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#" class="theme-btn-1 btn btn-effect-1" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                                                {{-- <i class="fas fa-shopping-cart"></i> --}}
-                                                                <span>..Selengkapnya</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>                                    
-                                    <hr>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Shop Tab Start -->
-                    <div class="ltn__shop-details-tab-inner ltn__shop-details-tab-inner-2">
-                        <div class="ltn__shop-details-tab-menu">
-                            <div class="nav">
-                                <a class="active show" data-toggle="tab" href="#liton_tab_details_1_1">Deskripsi</a>
-                                <a data-toggle="tab" href="#liton_tab_details_1_2" class="">Maps</a>
-                            </div>
-                        </div>
-                        <div class="tab-content">
-                            <div class="tab-pane fade active show" id="liton_tab_details_1_1">
-                                <div class="ltn__shop-details-tab-content-inner">
-                                    <h4 class="title-2">{{$umkms->nama_umkm}}</h4>
-                                    <p>{{$umkms->deskripsi}}</p> 
-                                    
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="liton_tab_details_1_2">
-                                {{-- <section class="text-center ltn__shop-details-tab-content-inner">
-                                    <div class="row">
-                                      <div class="col-lg-12">
-                                        <iframe
-                                          src="{{$umkms->link_maps}}"
-                                          class="h-100 w-100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                      </div>
-                                    </div>
-                                  </section> --}}
-                                    <div class="ltn__product-details-menu-2">
-                                        <ul>
-                                            <li>
-                                                <a href="{{$umkms->link_maps}}" class="theme-btn-1 btn btn-effect-1" target="_blank">
-                                                    <i class="fas fa-map-marker-alt"></i>
-                                                    <span>Klik unutk menuju lokasi</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Shop Tab End -->
-                </div>
-                
-                    
-                
-                <div class="col-lg-4">
-                    <aside class="sidebar ltn__shop-sidebar ltn__right-sidebar">
-                        <!-- Top Rated Product Widget -->
-                        <div class="widget ltn__top-rated-product-widget">
-                            <h4 class="ltn__widget-title ltn__widget-title-border">Produk</h4>
-                            <ul>
-                                @foreach ($produk as $data)
-                                <li>
-                                    <div class="top-rated-product-item clearfix">
-                                        <div class="top-rated-product-img">
-                                            <a href="#"><img src="{{ asset('storage/produk/'.$data->gambar) }}" alt="#"></a>
-                                        </div>
-                                        <div class="top-rated-product-info">
-                                            <h6><a href="product-details.html">{{$data->harga}}k</a></h6>
-                                            <div class="product-price">
-                                                <span>{{$data->nama_produk}}</span>
-                                                {{-- <del>$65.00</del> --}}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                @endforeach
-                            </ul>
-                        </div>
-                        <!-- Banner Widget -->
-                        {{-- <div class="widget ltn__banner-widget">
-                            <a href="shop.html"><img src="{{asset ('user/img/banner/2.jpg') }}" alt="#"></a>
-                        </div> --}}
-                    </aside>
-                </div>
-
-                
-            </div>
-        </div>
-    </div>
-    <!-- SHOP DETAILS AREA END -->
-
-    <!-- PRODUCT SLIDER AREA START -->
-    
-    <!-- PRODUCT SLIDER AREA END -->
-
-    <!-- FEATURE AREA START ( Feature - 3) -->
-    
-    <!-- FEATURE AREA END -->
-
-    <!-- FOOTER AREA START -->
-    <footer class="ltn__footer-area  ">
-        <div class="ltn__copyright-area ltn__copyright-2 section-bg-2  ltn__border-top-2--- plr--5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-12">
-                        <div class="ltn__copyright-design clearfix">
-                            <p>All Rights Reserved @ Company <span class="current-year"></span></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12 align-self-center">
-                        <div class="ltn__copyright-menu text-right">
-                            <ul>
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Claim</a></li>
-                                <li><a href="#">Privacy & Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- FOOTER AREA END -->
-
-    <!-- MODAL AREA START (Quick View Modal) -->
-    <div class="ltn__modal-area ltn__quick-view-modal-area">
-        <div class="modal fade" id="quick_view_modal" tabindex="-1">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            <!-- <i class="fas fa-times"></i> -->
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <div class="ltn__quick-view-modal-inner">
-                             <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-lg-6 col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/4.png" alt="#">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-12">
-                                        <div class="modal-product-info">
-                                            <div class="product-ratting">
-                                                <ul>
-                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
-                                                    <li><a href="#"><i class="far fa-star"></i></a></li>
-                                                    <li class="review-total"> <a href="#"> ( 95 Reviews )</a></li>
-                                                </ul>
-                                            </div>
-                                            <h3>Vegetables Juices</h3>
-                                            <div class="product-price">
-                                                <span>$149.00</span>
-                                                <del>$165.00</del>
-                                            </div>
-                                            <div class="modal-product-meta ltn__product-details-menu-1">
-                                                <ul>
-                                                    <li>
-                                                        <strong>Categories:</strong> 
-                                                        <span>
-                                                            <a href="#">Parts</a>
-                                                            <a href="#">Car</a>
-                                                            <a href="#">Seat</a>
-                                                            <a href="#">Cover</a>
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="ltn__product-details-menu-2">
-                                                <ul>
-                                                    <li>
-                                                        <div class="cart-plus-minus">
-                                                            <input type="text" value="02" name="qtybutton" class="cart-plus-minus-box">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="theme-btn-1 btn btn-effect-1" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
-                                                            <i class="fas fa-shopping-cart"></i>
-                                                            <span>ADD TO CART</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="ltn__product-details-menu-3">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal">
-                                                            <i class="far fa-heart"></i>
-                                                            <span>Add to Wishlist</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="" title="Compare" data-toggle="modal" data-target="#quick_view_modal">
-                                                            <i class="fas fa-exchange-alt"></i>
-                                                            <span>Compare</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <hr>
-                                            <div class="ltn__social-media">
-                                                <ul>
-                                                    <li>Share:</li>
-                                                    <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
-                                                    <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                                                    
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MODAL AREA END -->
-
-    <!-- MODAL AREA START (Add To Cart Modal) -->
-    <div class="ltn__modal-area ltn__add-to-cart-modal-area">
-        <div class="modal fade" id="add_to_cart_modal" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <div class="ltn__quick-view-modal-inner">
-                             <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/1.png" alt="#">
-                                        </div>
-                                         <div class="modal-product-info">
-                                            <h5><a href="product-details.html">Vegetables Juices</a></h5>
-                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Cart</p>
-                                            <div class="btn-wrapper">
-                                                <a href="cart.html" class="theme-btn-1 btn btn-effect-1">View Cart</a>
-                                                <a href="checkout.html" class="theme-btn-2 btn btn-effect-2">Checkout</a>
-                                            </div>
-                                         </div>
-                                         <!-- additional-info -->
-                                         <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                         </div>
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MODAL AREA END -->
-
-    <!-- MODAL AREA START (Wishlist Modal) -->
-    <div class="ltn__modal-area ltn__add-to-cart-modal-area">
-        <div class="modal fade" id="liton_wishlist_modal" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <div class="ltn__quick-view-modal-inner">
-                             <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/7.png" alt="#">
-                                        </div>
-                                         <div class="modal-product-info">
-                                            <h5><a href="product-details.html">Vegetables Juices</a></h5>
-                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Wishlist</p>
-                                            <div class="btn-wrapper">
-                                                <a href="wishlist.html" class="theme-btn-1 btn btn-effect-1">View Wishlist</a>
-                                            </div>
-                                         </div>
-                                         <!-- additional-info -->
-                                         <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                         </div>
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MODAL AREA END -->
-
+  </div>
 </div>
-<!-- Body main wrapper end -->
 
-    <!-- All JS Plugins -->
-    <script src="{{asset ('user/js/plugins.js') }}"></script>
-    <!-- Maplace-active -->
-        
-    <!-- Google Map js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeeHDCOXmUMja1CFg96RbtyKgx381yoBU"></script>
-    <!-- Main JS -->
-    <script src="{{asset ('user/js/main.js') }}"></script>
+<!-- Page Wrap -->
+<div id="wrap">
   
+  <!-- Header -->
+  <header class="header-style-2"> 
+    
+    <!-- Logo -->
+    <div class="container">
+      <div class="logo"> <a href="#."><img src="{{asset ('frontend/images/logo-dark.png') }}" alt=""></a> </div>
+      </div>
+      
+      
+         <div class="sticky">
+      <div class="container">
+
+      <!-- Nav -->
+      <!-- Nav -->
+        <nav class="webimenu"> 
+          <!-- MENU BUTTON RESPONSIVE -->
+          <div class="menu-toggle"> <i class="fa fa-bars"> </i> </div>
+          <ul class="ownmenu">
+          <li class="active"><a href="/">Beranda</a>
+          </li>
+          <li class="meganav"><a href="/umkms">UMKM</a> 
+            </li>
+          <li><a href="https://wa.me/6282250871431">Kontak</a>
+          </li>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <!-- Header End --> 
+  
+  <!-- CONTENT START -->
+  <div class="content"> 
+    
+    <!--======= SUB BANNER =========-->
+    <section class="sub-banner animate fadeInUp" data-wow-delay="0.4s">
+      <div class="container">
+        <h4>{{$umkms->nama_umkm}}</h4>
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+          <li><a href="/">Beranda</a></li>
+          <li><a href="/umkms">UMKM</a></li>
+          <li class="active">{{$umkms->nama_umkm}}</li>
+        </ol>
+      </div>
+    </section>
+    
+    <!--======= PAGES INNER =========-->
+    <section class="section-p-30px pages-in item-detail-page">
+      <div class="container">
+        <div class="row"> 
+          
+          <!--======= IMAGES SLIDER =========-->
+          <div class="col-sm-6 large-detail animate fadeInLeft" data-wow-delay="0.4s">
+            <div class="images-slider">
+              <ul class="slides">
+                <li data-thumb="{{ asset('storage/umkm/'.$umkms->logo) }}"> <img class="img-responsive" src="{{ asset('storage/umkm/'.$umkms->logo) }}"  alt=""> </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!--======= ITEM DETAILS =========-->
+          <div class="col-sm-6 animate fadeInRight" data-wow-delay="0.4s">
+            <div class="row">
+              <div class="col-sm-12">
+                <h5>{{$umkms->nama_umkm}}</h5>
+                <span class="price">{{$umkms->kategori['kategori_umkm']}}</span> </div>
+              {{-- <div class="col-sm-12"> <span class="code">PRODUCT CODE: SKU: PDID-BC-01.</span> --}}
+                {{-- <div class="some-info no-border"> <br>
+                  <div class="in-stoke"> <i class="fa fa-check-circle"></i> IN STOCK</div>
+                  <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></div>
+                  <a href="#review"  class="review">(3) Review</a> &nbsp;&nbsp;&nbsp; <a href="#review-form" class="review">Add Your Review</a></div>
+                <hr>
+              </div> --}}
+            </div>
+            <p>{{$umkms->deskripsi}}</p>
+            <hr>
+            <div class="row"> 
+                <!-- QUIENTY -->
+                <div class="col-sm-12">
+                    <div class="fun-share">
+                        <a href="{{$umkms->link_web}}" class="btn btn-small btn-dark">Selengkapnya</a> <a href="{{$umkms->link_instagram}}" class="share-sec"><i class="fa fa-instagram"></i></a> <a class="share-sec" href="https://wa.me/62{{$umkms->no_telp}}"><i class="fa fa-whatsapp"></i></a>
+                    </div>
+                </div>
+              </div>
+      </div>
+      
+    </section>
+  </div>
+  
+  <!--======= Footer =========-->
+  <footer>
+    <div class="container">
+      <div class="text-center"> <a href="#."><img src="images/logo.png" alt=""></a><br>
+        <img class="margin-t-40" src="images/hammer.png" alt="">
+        <p class="intro-small margin-t-40">Multipurpose E-Commerce Theme is suitable for furniture store, fashion shop, accessories, electric shop. We have included multiple layouts for home page to give you best selections in customization.</p>
+      </div>
+      
+      <!--  Footer Links -->
+      <div class="footer-link row">
+        <div class="col-md-6">
+          <ul>
+            
+            <!--  INFOMATION -->
+            <li class="col-sm-6">
+              <h5>INFOMATION</h5>
+              <ul class="f-links">
+                <li><a href="#.">ABOUT US</a></li>
+                <li><a href="#."> DELIVERY INFOMATION</a></li>
+                <li><a href="#."> PRIVACY & POLICY</a></li>
+                <li><a href="#."> TEMRS & CONDITIONS</a></li>
+                <li><a href="#."> MANUFACTURES</a></li>
+              </ul>
+            </li>
+            
+            <!-- MY ACCOUNT -->
+            <li class="col-sm-6">
+              <h5>MY ACCOUNT</h5>
+              <ul class="f-links">
+                <li><a href="#.">MY ACCOUNT</a></li>
+                <li><a href="#."> LOGIN</a></li>
+                <li><a href="#."> MY CART</a></li>
+                <li><a href="#."> WISHLIST</a></li>
+                <li><a href="#."> CHECKOUT</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Second Row -->
+        <div class="col-md-6">
+          <ul class="row">
+            
+            <!-- TWITTER -->
+            <li class="col-sm-6">
+              <h5>TWITTER</h5>
+              <p>Check out new work on my @Behance portfolio: "BCreative_Multipurpose Theme" http://on.be.net/1zOOfBQ </p>
+            </li>
+            
+            <!-- FLICKR PHOTO -->
+            <li class="col-sm-6">
+              <h5>FLICKR PHOTO</h5>
+              <ul class="flicker">
+                <li><a href="#."><img src="images/flicker-1.jpg" alt=""></a></li>
+                <li><a href="#."><img src="images/flicker-2.jpg" alt=""></a></li>
+                <li><a href="#."><img src="images/flicker-3.jpg" alt=""></a></li>
+                <li><a href="#."><img src="images/flicker-4.jpg" alt=""></a></li>
+                <li><a href="#."><img src="images/flicker-5.jpg" alt=""></a></li>
+                <li><a href="#."><img src="images/flicker-6.jpg" alt=""></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Rights -->
+      <div class="rights">
+        <p>© 2015 HTML5 TEMPLATE SEBIAN. All Rights Reserved. Powered By WPELITE</p>
+      </div>
+    </div>
+  </footer>  
+  <!-- GO TO TOP --> 
+  	<a href="#" class="cd-top"><i class="fa fa-angle-up"></i></a> 
+  <!-- GO TO TOP End -->
+</div>
+<!-- Wrap End --> 
+<script src="{{asset ('frontend/js/jquery-1.11.3.js') }}"></script> 
+<script src="{{asset ('frontend/js/wow.min.js') }}"></script> 
+<script src="{{asset ('frontend/js/bootstrap.min.js') }}"></script> 
+<script src="{{asset ('frontend/js/own-menu.js') }}"></script> 
+<script src="{{asset ('frontend/js/owl.carousel.min.js') }}"></script> 
+<script src="{{asset ('frontend/js/jquery.magnific-popup.min.js') }}"></script> 
+<script src="{{asset ('frontend/js/jquery.flexslider-min.js') }}"></script> 
+<script src="{{asset ('frontend/js/jquery.isotope.min.js') }}"></script>
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+<script type="text/javascript" src="{{asset ('frontend/rs-plugin/js/jquery.themepunch.tools.min.js') }}"></script> 
+<script type="text/javascript" src="{{asset ('frontend/rs-plugin/js/jquery.themepunch.revolution.min.js') }}"></script> 
+<script src="{{asset ('frontend/js/main.js') }}"></script> 
+<!-- begin map script--> 
+<script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false'></script> 
+<script type="text/javascript">
+/*==========  Map  ==========*/
+var map;
+function initialize_map() {
+if ($('#map').length) {
+	var myLatLng = new google.maps.LatLng(-37.814199, 144.961560);
+	var mapOptions = {
+		zoom: 17,
+		center: myLatLng,
+		scrollwheel: false,
+		panControl: false,
+		zoomControl: true,
+		scaleControl: false,
+		mapTypeControl: false,
+		streetViewControl: false
+	};
+	map = new google.maps.Map(document.getElementById('map'), mapOptions);
+	var marker = new google.maps.Marker({
+		position: myLatLng,
+		map: map,
+		tittle: 'Envato',
+		icon: './images/map-locator.png'
+	});
+} else {
+	return false;
+}
+}
+google.maps.event.addDomListener(window, 'load', initialize_map);
+</script>
 </body>
 </html>
-
